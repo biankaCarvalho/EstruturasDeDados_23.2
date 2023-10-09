@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lista.c"
+#include "lista.h"
 
 int main(void){
  Lista* l1 = lst_cria();
@@ -13,10 +13,10 @@ int main(void){
  l1 = lst_remove_rec(l1,41);
  lst_imprime(l1);
  lst_imprime_invertida_rec(l1);
- printf("Num. nós c/ info < que 30: %d\n",menores(l1,30));
- printf("O comprimento da lista é %d\n",comprimento(l1));
- printf("Soma dos valores dos nós %d\n",soma(l1));
- printf("Num. nós com val. primos é %d\n",primos(l1));
+ printf("Num. nÃ³s c/ info < que 30: %d\n",menores(l1,30));
+ printf("O comprimento da lista Ã© %d\n",comprimento(l1));
+ printf("Soma dos valores dos nÃ³s %d\n",soma(l1));
+ printf("Num. nÃ³s com val. primos Ã© %d\n",primos(l1));
  Lista* l2 = lst_cria();
  l2 = lst_insere(l2,28);
  l2 = lst_insere(l2,45);
